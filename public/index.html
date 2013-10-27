@@ -1,0 +1,363 @@
+<!doctype html>
+<html ng-app="rboehmAngularSlides">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+  <title>Hands on AngularJS</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link type="text/css" media="screen" href="css/reveal.min.css" rel="stylesheet" />
+<link type="text/css" media="screen" href="css/theme/default.css" rel="stylesheet" />
+<link type="text/css" media="screen" href="css/shame.css" rel="stylesheet" />
+
+
+  <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+  <script>
+    document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+  </script>
+
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+<div class="reveal"
+     leap-swipe-left="left()"
+     leap-swipe-right="right()"
+     leap-swipe-up="down()"
+     leap-swipe-down="up()">
+
+    <div class="slides">
+        <section>
+  <h1>Hands on AngularJS</h1>
+  <h3> by
+    <div><a href="https://twitter.com/roobijn" target="_blank">@roobijn</a></div>
+  </h3>
+
+  <aside class="notes">
+    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+  </aside>
+</section>
+
+<section>
+    <h2>About Me</h2>
+
+    <img src="images/robin_boehm.png" class="circle"/>
+    <p>
+        <strong>Robin Böhm</strong>
+    <p><a href="https://twitter.com/roobijn" target="_blank">@roobijn</a></p>
+    </p>
+    <ul>
+        <li>software engineer</li>
+        <li>coach & consultant</li>
+        <!--<li>author at
+            <a href="https://twitter.com/dpunkt_verlag" target="_blank">@dpunkt_verlag</a>
+        </li>-->
+    </ul>
+
+</section>
+
+<section>
+  <h2>About us - Angularjs.de</h2>
+
+  <div class="left">
+    <a href="http://angularjs.de" target="_blank">
+      <img src="images/angularjsde-logo.png"/>
+    </a>
+  </div>
+
+  <div class="right">
+    <div class="person left">
+      <div>Sascha</div><div>Brink</div>
+      <img src="images/sascha_brink.jpeg" class="circle"/>
+      <div><a href="https://twitter.com/sascha_brink">@sascha_brink</a></div>
+    </div>
+
+    <div class="person  left">
+      <div>Philipp</div><div>Tarasiewicz</div>
+      <img src="images/philipp_tarasiewicz.jpeg" class="circle" style="margin-left: 10px"/>
+      <div><a href="https://twitter.com/justphilmusic">@justphilmusic</a></div>
+    </div>
+
+    <div class="person left">
+      <div>Robin</div><div>B&ouml;hm</div>
+      <img src="images/robin_boehm.png" class="circle"/>
+      <div><a href="https://twitter.com/roobijn">@roobijn</a></div>
+    </div>
+
+  </div>
+    <div class="clear"></div>
+    <p></p>
+    <div class="left">
+    <ul>
+      <li>Book (work in progress)</li>
+      <li>In-House Consulting & Coaching</li>
+      <li>Workshops</li>
+      <li>Twitter <a href="http://twitter.com/angularjs_de">@angularjs_de</a></li>
+      <li>Google+ & Facebook <strong>AngularJS Deutschland</strong></li>
+      <li><a href="http://angularjs.de" target="_blank">AngularJS.de</a></li>
+    </ul>
+    </div>
+    <div class="clear"></div>
+</section>
+
+<section>
+    <section>
+        <h2>Leap Motion</h2>
+    </section>
+
+    <section>
+        <h2>Leap Motion</h2>
+        <img src="images/leap-box.jpg"/>
+    </section>
+
+    <section>
+        <h2>Leap Motion</h2>
+        <img src="images/leap-motion-1.jpg"/>
+    </section>
+
+
+    <section>
+        <h2>Leap Motion</h2>
+        <img src="images/leap-hands.jpg"/>
+    </section>
+
+    <section>
+        <h2>Leap Motion</h2>
+        <img src="images/leap-motion-game.png"/>
+    </section>
+
+    <section>
+        Maybe...
+    </section>
+
+    <section>
+        Control my slides..
+    </section>
+
+    <section>
+        <a href="http://js.leapmotion.com/">LeapJS API</a>
+    </section>
+</section>
+
+<section>
+    <img src="images/w00t.jpg"/>
+</section>
+
+<section>
+    <h2>Angular + Leap</h2>
+</section>
+
+<section>
+    <h2>Directives</h2>
+    <ul>
+        <li>Easy to use</li>
+        <li>Reusable</li>
+        <li>...</li>
+    </ul>
+</section>
+
+
+
+<section>
+    <h3>leap-swipe-left="slideleft()"</h3>
+</section>
+
+<section>
+    <h3>leap-screen-tap="used=used+1"</h3>
+</section>
+
+<section>
+    <h2>Directives</h2>
+    <pre ng-non-bindable>
+        <code>
+<input type="number" ng-model="used" leap-screen-tap="used=used+1">
+        </code>
+    </pre>
+</section>
+
+
+<section ng-controller="newScope" ng-init="used=0;know=0;never_heard=0">
+    <h2>Quick-Start</h2>
+
+    <div style="margin-bottom:60px">How many of you ... AngularJS</div>
+
+    <div class="left">
+        <div class="left">
+            <input type="number" ng-model="used" leap-screen-tap="used=used+1">
+            <span>already use</span>
+        </div>
+        <div class="clear"></div>
+
+        <div class="left">
+            <input ng-model="know" type="number"  leap-key-tap="know=know+1">
+            <span>know</span>
+        </div>
+        <div class="clear"></div>
+
+        <div class="left">
+            <input ng-model="never_heard" type="number">
+            <span>never heard about</span>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="poll poll1" style="height: {{used / (used + know + never_heard) * 5}}em;">
+            <span ng-show="used">{{used}}</span>
+        </div>
+        <div class="poll poll2" style="height: {{know / (used + know + never_heard) * 5}}em;">
+            <span ng-show="know">{{know}}</span>
+        </div>
+        <div class="poll poll3" style="height: {{never_heard / (used + know + never_heard) * 5}}em;">
+            <span ng-show="never_heard">{{never_heard}}</span>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="left">
+        <br>
+        <p ng-show="used + know + never_heard">Sum: {{used + know + never_heard}}</p>
+    </div>
+</section>
+
+
+<section>
+    <h2>Angular Leap at GitHub</h2>
+    <img src="images/angular-leap-github.png"/>
+    <a href="https://github.com/angular-leap?tab=members">https://github.com/angular-leap?tab=members</a>
+</section>
+
+
+<section>
+    <h2>GoInstant</h2>
+</section>
+
+<section>
+    <h2>GoAngular</h2>
+</section>
+
+
+<section>
+    <h2>real-time controller synchronization</h2>
+    <h3>via WebSocket</h3>
+</section>
+
+<section>
+    <img src="images/w00t.jpg"/>
+</section>
+
+
+<section>
+    <h2>References</h2>
+    <ul>
+        <li><a href="http://angularjs.org/">http://angularjs.org/</a></li>
+        <li><a href="http://angularjs.de/">http://angularjs.de/</a></li>
+        <li><a href="http://angular-leap-instant.herokuapp.com/">http://angular-leap-instant.herokuapp.com/</a></li>
+        <li><a href="https://github.com/hakimel/reveal.js/">https://github.com/hakimel/reveal.js/</a></li>
+        <li><a href="https://github.com/leapmotion/leapjs/">https://github.com/leapmotion/leapjs/</a></li>
+        <li><a href="https://developers.goinstant.com/v1/GoAngular/index.html">https://developers.goinstant.com/v1/GoAngular/index.html</a></li>
+    </ul>
+</section>
+<section>
+    <h1>Thanks!</h1>
+    <img src="images/robin_boehm.png" class="circle"/>
+    <p>
+        <strong>Robin Böhm</strong>
+    <p><a href="https://twitter.com/roobijn" target="_blank">@roobijn</a></p>
+</section>
+
+    </div>
+    <div class="headline right">
+        <a href="https://twitter.com/roobijn" target="_blank">
+            @roobijn
+        </a>
+    </div>
+    <div class="headline left">Robin B&ouml;hm</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/angular/angular.js" type="text/javascript"></script>
+<script src="js/angular-leap/build/angular-leap.js" type="text/javascript"></script>
+<script src="https://cdn.goinstant.net/v1/platform.min.js" type="text/javascript"></script>
+<script src="js/goangular/dist/goangular.js" type="text/javascript"></script>
+<script src="js/leapjs/leap.min.js" type="text/javascript"></script>
+<script src="lib/js/head.min.js" type="text/javascript"></script>
+<script src="js/reveal.js/js/reveal.min.js" type="text/javascript"></script>
+<script src="js/shame.js" type="text/javascript"></script>
+
+  <script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+        { src: 'classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+        // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+    });
+  </script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45188049-1', 'angular-leap-instant.herokuapp.com');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

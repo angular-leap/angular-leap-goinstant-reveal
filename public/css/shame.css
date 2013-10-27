@@ -1,0 +1,76 @@
+/* line 1, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+img.circle {
+  width: 100px;
+  border-radius: 50%; }
+
+/* line 6, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+div.person {
+  padding: 15px; }
+
+/* line 10, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+.left {
+  float: left; }
+
+/* line 14, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+.right {
+  float: right; }
+
+/* line 18, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+.clear {
+  clear: both; }
+
+/* line 22, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+.center {
+  text-align: center; }
+
+/* line 27, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+.poll {
+  transition: 1s all;
+  position: absolute;
+  bottom: 0;
+  width: 50px; }
+
+/* line 30, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+.poll span {
+  position: relative;
+  top: -40px;
+  display: block; }
+
+/* line 31, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+.poll1 {
+  background-color: #00c500;
+  right: 100px; }
+
+/* line 32, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+.poll2 {
+  background-color: #f2de4f;
+  right: 50px; }
+
+/* line 33, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+.poll3 {
+  background-color: #ca3a4a;
+  right: 0px; }
+
+/* line 35, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+input[type="number"] {
+  border-radius: 0.1em;
+  padding: 0.1em 0.2em;
+  border: 1px solid #eee;
+  font-size: 0.7em;
+  width: 3em; }
+
+/* line 37, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+div.headline {
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+  font-size: 0.5em;
+  z-index: 999999; }
+
+/* line 45, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+div.headline.left {
+  left: 1em; }
+
+/* line 49, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+div.headline.right {
+  right: 1em; }
