@@ -12,7 +12,7 @@ Awesome!
 
 * [AngularJS](http://angularjs.org)
 * [LeapMotion](http://leapmotion.com)
-* [Angular-Leap Project](https://github.com/angular-leap/)
+* [Angular-Leap Project](https://github.com/angular-leap/angular-leap)
 * [Reveal.js](https://github.com/hakimel/reveal.js/)
 * [GoInstant / GoAngular](https://developers.goinstant.com/v1/GoAngular/concepts.html)
 
@@ -24,5 +24,5 @@ Awesome!
 
 
 ## Author
-[Robin Böhm](https://twitter.com/robinboehm)
+[Robin Böhm](https://twitter.com/roobijn)
 
