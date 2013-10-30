@@ -21,7 +21,7 @@ Awesome!
 [angular-leap-instant.herokuapp.com](https://angular-leap-instant.herokuapp.com/)
 
 ## Example Video
-
+...in progress... ;)
 
 ## Author
 [Robin Böhm](https://twitter.com/roobijn)
