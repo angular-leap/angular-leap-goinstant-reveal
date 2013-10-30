@@ -1,21 +1,36 @@
 <!doctype html>
 <html ng-app="rboehmAngularSlides">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <head>
   <meta charset="utf-8">
 
   <!-- Always force latest IE rendering engine or request Chrome Frame -->
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-  <title>Hands on AngularJS</title>
+  <title>Create a Multi-Client Deck</title>
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <link type="text/css" media="screen" href="css/reveal.min.css" rel="stylesheet" />
-<link type="text/css" media="screen" href="css/theme/default.css" rel="stylesheet" />
-<link type="text/css" media="screen" href="css/shame.css" rel="stylesheet" />
+  <link href="css/reveal.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="css/theme/default.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="css/shame.css" media="screen" rel="stylesheet" type="text/css" />
 
 
   <!-- If the query includes 'print-pdf', use the PDF print sheet -->
@@ -50,13 +65,11 @@
         <section>
   <h1>Hands on AngularJS</h1>
   <h3> by
-    <div><a href="https://twitter.com/roobijn" target="_blank">@roobijn</a></div>
+    <div><a href="https://twitter.com/roobijn" target="_blank">Robin B&ouml;hm</a></div>
   </h3>
-
-  <aside class="notes">
-    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-  </aside>
 </section>
+
+
 
 <section>
     <h2>About Me</h2>
@@ -74,9 +87,7 @@
         </li>-->
     </ul>
 
-</section>
-
-<section>
+</section><section>
   <h2>About us - Angularjs.de</h2>
 
   <div class="left">
@@ -121,6 +132,59 @@
 </section>
 
 <section>
+    <h1>AngularJS</h1>
+</section>
+
+<section>
+    <h1>Leap Motion</h1>
+</section>
+
+<section>
+    <h1>GoInstant</h1>
+</section>
+
+
+<section>
+    <h1>This deck</h1>
+</section>
+
+<section>
+    <h1>This deck is...</h1>
+</section>
+
+<section>
+    <h1>This deck is...</h1>
+    <h2>Controllable via Leap-Motion</h2>
+    <ul>
+        <li>use...</li>
+        <li>swipe-left</li>
+        <li>swipe-right</li>
+        <li>swipe-up</li>
+        <li>swipe-down</li>
+    </ul>
+</section>
+
+<section>
+    <h1>This deck is...</h1>
+    <h2>Multi-Client Sync via goInstant</h2>
+    <ul>
+        <li>Open this URL with multiple browsers/devices</li>
+    </ul>
+</section>
+
+
+
+<section>
+    <h2>How?</h2>
+</section>
+
+<section>
+    <h2>Step by Step</h2>
+</section>
+
+
+
+<section>
     <section>
         <h2>Leap Motion</h2>
     </section>
@@ -147,20 +211,21 @@
     </section>
 
     <section>
-        Maybe...
-    </section>
-
-    <section>
-        Control my slides..
-    </section>
-
-    <section>
         <a href="http://js.leapmotion.com/">LeapJS API</a>
     </section>
 </section>
 
 <section>
     <img src="images/w00t.jpg"/>
+</section>
+
+<section>
+    <h2>Already solved - Reveal.js Plugin</h2>
+        <a href="https://github.com/hakimel/reveal.js/pull/554">GitHub PR merged</a>
+</section>
+
+<section>
+    <h2>Now make this reusable for other Applications...</h2>
 </section>
 
 <section>
@@ -171,12 +236,13 @@
     <h2>Directives</h2>
     <ul>
         <li>Easy to use</li>
-        <li>Reusable</li>
-        <li>...</li>
+        <li>Reusable components</li>
     </ul>
 </section>
 
-
+<section>
+    <h2>Dreamcode...</h2>
+</section>
 
 <section>
     <h3>leap-swipe-left="slideleft()"</h3>
@@ -184,6 +250,10 @@
 
 <section>
     <h3>leap-screen-tap="used=used+1"</h3>
+</section>
+
+<section>
+    <h2>Real Code...</h2>
 </section>
 
 <section>
@@ -196,10 +266,84 @@
 </section>
 
 
-<section ng-controller="newScope" ng-init="used=0;know=0;never_heard=0">
+<section>
+    <h2>Control Reveal with Leap Directives...</h2>
+</section>
+
+
+<section>
+    <h2>Implementation</h2>
+    <pre ng-non-bindable>
+
+$scope.left = Reveal.left;
+$scope.right = Reveal.right;</code>
+    </pre>
+    <pre ng-non-bindable>
+        <code class="html">
+<div    class="reveal"
+
+        leap-swipe-left="left()"
+        leap-swipe-right="right()">
+            <div class="slides">
+                ...
+            </div>
+</div>
+        </code></pre>
+</section>
+
+<section>
+    <h2>Angular Leap at GitHub</h2>
+    <img src="images/angular-leap-github.png"/>
+    <a href="https://github.com/angular-leap/angular-leap">https://github.com/angular-leap/angular-leap</a>
+</section>
+
+<section>
+    <h2>Nice...</h2>
+    <h3>Now Multi-Client Sync</h3>
+</section>
+
+<section>
+    <h2>GoInstant</h2>
+    <ul>
+        <li>Platform</li>
+        <li>real-time, multi-user applications.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>GoAngular</h2>
+        real-time controller synchronization
+</section>
+
+<section>
+    <h2>Controller Sync</h2>
+    <img src="images/goangular-controller.gif"/>
+</section>
+
+<section>
+    <h2>Okay...let's try</h2>
+</section>
+
+<section>
+    <img src="images/w00t.jpg"/>
+</section>
+<section>
+    <h2>Nice...</h2>
+</section>
+
+<section>
+    <h2>Mobile via 3G?</h2>
+</section>
+
+<section>
+    <h2>Extend the Example</h2>
+</section>
+
+<section ng-controller="syncScope" ng-init="used=0;know=0;never_heard=0">
     <h2>Quick-Start</h2>
 
-    <div style="margin-bottom:60px">How many of you ... AngularJS</div>
+    <div>How many of you ... AngularJS</div>
+    <div style="margin-bottom:60px">Leap: use key-tap and screen-tap gestures</div>
 
     <div class="left">
         <div class="left">
@@ -239,33 +383,18 @@
         <p ng-show="used + know + never_heard">Sum: {{used + know + never_heard}}</p>
     </div>
 </section>
-
-
-<section>
-    <h2>Angular Leap at GitHub</h2>
-    <img src="images/angular-leap-github.png"/>
-    <a href="https://github.com/angular-leap?tab=members">https://github.com/angular-leap?tab=members</a>
-</section>
-
-
-<section>
-    <h2>GoInstant</h2>
-</section>
-
-<section>
-    <h2>GoAngular</h2>
-</section>
-
-
-<section>
-    <h2>real-time controller synchronization</h2>
-    <h3>via WebSocket</h3>
-</section>
-
 <section>
     <img src="images/w00t.jpg"/>
 </section>
 
+
+<section>
+    <h2>Round about 50 LOC</h2>
+    <ul>
+        <li>Swipe Events</li>
+        <li>Multi-Client Sync</li>
+    </ul>
+</section>
 
 <section>
     <h2>References</h2>
@@ -278,6 +407,7 @@
         <li><a href="https://developers.goinstant.com/v1/GoAngular/index.html">https://developers.goinstant.com/v1/GoAngular/index.html</a></li>
     </ul>
 </section>
+
 <section>
     <h1>Thanks!</h1>
     <img src="images/robin_boehm.png" class="circle"/>
@@ -287,10 +417,22 @@
 </section>
 
     </div>
+
+
+
+
+
+
+
     <div class="headline right">
         <a href="https://twitter.com/roobijn" target="_blank">
             @roobijn
         </a>
+    </div>
+    <div class="bottomline left">
+        <div>
+            Current Viewers:<span ng-bind="userCount"></span>
+        </div>
     </div>
     <div class="headline left">Robin B&ouml;hm</div>
 </div>
@@ -322,7 +464,11 @@
 <script src="js/leapjs/leap.min.js" type="text/javascript"></script>
 <script src="lib/js/head.min.js" type="text/javascript"></script>
 <script src="js/reveal.js/js/reveal.min.js" type="text/javascript"></script>
-<script src="js/shame.js" type="text/javascript"></script>
+<script src="js/module.js" type="text/javascript"></script>
+<script src="js/revealConfig.js" type="text/javascript"></script>
+<script src="js/syncSlide.js" type="text/javascript"></script>
+<script src="js/syncScope.js" type="text/javascript"></script>
+<script src="js/viewers.js" type="text/javascript"></script>
 
   <script>
     // Full list of configuration options available here:

@@ -68,9 +68,17 @@ div.headline {
   z-index: 999999; }
 
 /* line 45, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+div.bottomline {
+  position: absolute;
+  bottom: 10px;
+  opacity: 0.7;
+  font-size: 0.5em;
+  z-index: 999999; }
+
+/* line 53, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
 div.headline.left {
   left: 1em; }
 
-/* line 49, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
+/* line 57, /Users/robinboehm/development/angularJS/talks/20131026-HandsOnAngularJS/source/css/shame.scss */
 div.headline.right {
   right: 1em; }

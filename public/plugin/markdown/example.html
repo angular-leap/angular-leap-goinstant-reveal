@@ -1,5 +1,20 @@
 <!doctype html>
 <html ng-app="rboehmAngularSlides">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <head>
   <meta charset="utf-8">
 
@@ -13,9 +28,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <link type="text/css" media="screen" href="../../css/reveal.min.css" rel="stylesheet" />
-<link type="text/css" media="screen" href="../../css/theme/default.css" rel="stylesheet" />
-<link type="text/css" media="screen" href="../../css/shame.css" rel="stylesheet" />
+  <link href="../../css/reveal.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../../css/theme/default.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../../css/shame.css" media="screen" rel="stylesheet" type="text/css" />
 
 
   <!-- If the query includes 'print-pdf', use the PDF print sheet -->
@@ -69,10 +84,22 @@
 
 <p>Content 3.2</p>
     </div>
+
+
+
+
+
+
+
     <div class="headline right">
         <a href="https://twitter.com/roobijn" target="_blank">
             @roobijn
         </a>
+    </div>
+    <div class="bottomline left">
+        <div>
+            Current Viewers:<span ng-bind="userCount"></span>
+        </div>
     </div>
     <div class="headline left">Robin B&ouml;hm</div>
 </div>
@@ -104,7 +131,11 @@
 <script src="../../js/leapjs/leap.min.js" type="text/javascript"></script>
 <script src="../../lib/js/head.min.js" type="text/javascript"></script>
 <script src="../../js/reveal.js/js/reveal.min.js" type="text/javascript"></script>
-<script src="../../js/shame.js" type="text/javascript"></script>
+<script src="../../js/module.js" type="text/javascript"></script>
+<script src="../../js/revealConfig.js" type="text/javascript"></script>
+<script src="../../js/syncSlide.js" type="text/javascript"></script>
+<script src="../../js/syncScope.js" type="text/javascript"></script>
+<script src="../../js/viewers.js" type="text/javascript"></script>
 
   <script>
     // Full list of configuration options available here:

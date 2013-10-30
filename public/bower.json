@@ -1,18 +1,18 @@
 {
-    "author"         : "Robin Böhm",
-    "name"           : "Hands on AngularJS by Robin Böhm",
-    "description"    : "Some RevealJS Slides About the AngularJS Framework, LeapJS and GoAngular",
-    "version"        : "1.0.0",
-    "homepage"       : "https://github.com/angular-leap/angular-leap",
-    "repository"     : {
-        "type": "git",
-        "url" : "git@github.com:angular-leap/angular-leap.git"
-    },
-    "dependencies"   : {
-        "reveal.js"   : "2.5.0",
-        "angular"     : "1.0.8",
-        "leapjs"      : "0.2",
-        "angular-leap": "0.0.1",
-        "goangular"   : "1.0.2"
-    }
+  "author": "Robin Böhm",
+  "name": "Hands on AngularJS by Robin Böhm",
+  "description": "Some RevealJS Slides About the AngularJS Framework, LeapJS and GoAngular",
+  "version": "1.0.0",
+  "homepage": "https://github.com/angular-leap/angular-leap-goinstant-reveal/",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:angular-leap/angular-leap-goinstant-reveal.git"
+  },
+  "dependencies": {
+    "reveal.js": "~2.5.0",
+    "angular": "~1.0.8",
+    "leapjs": "~0.2.2",
+    "angular-leap": "~0.0.1",
+    "goangular": "~1.0.2"
+  }
 }
