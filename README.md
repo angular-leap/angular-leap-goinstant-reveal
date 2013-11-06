@@ -15,7 +15,7 @@ Awesome!
 * [Angular-Leap Project](https://github.com/angular-leap/angular-leap)
 * [Reveal.js](https://github.com/hakimel/reveal.js/)
 * [GoInstant / GoAngular](https://developers.goinstant.com/v1/GoAngular/concepts.html)
-* [Blog Article](https://goinstant.com/blog/creating-a-revealjs-deck-with-angularjs-leap-motion-and-goinstant)
+* [Blog Post](https://goinstant.com/blog/creating-a-revealjs-deck-with-angularjs-leap-motion-and-goinstant)
 
 ## Deployed Example
 [angular-leap-instant.herokuapp.com](https://angular-leap-instant.herokuapp.com/)
