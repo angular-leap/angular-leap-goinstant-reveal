@@ -26,3 +26,7 @@ Awesome!
 ## Author
 [Robin Böhm](https://twitter.com/roobijn)
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/angular-leap/angular-leap-goinstant-reveal/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
